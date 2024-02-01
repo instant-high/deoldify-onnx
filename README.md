@@ -2,7 +2,7 @@
 
 Simple image and video colorization using onnx converted deoldify model.
 
-Easy to install.
+Easy to install. Can be run on CPU (slow ~ 1it/sec.) or nVidia GPU (~ 10 it/sec. on RTX3060)
 
 For inference run:
 
