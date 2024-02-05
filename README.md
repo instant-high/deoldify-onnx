@@ -24,8 +24,4 @@ https://github.com/instant-high/deoldify-onnx/assets/77229558/3824e96d-fffc-494e
 
 https://github.com/instant-high/deoldify-onnx/assets/77229558/543e1dd1-27da-4c63-95a9-9c0696adea51
 
-.
 
-link to download the converted deoldify.onnx from this repository:
-
-https://github.com/KeepGoing2019HaHa/AI-application/tree/master/deoldify/ncnn
