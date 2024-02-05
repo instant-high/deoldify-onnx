@@ -2,7 +2,11 @@
 
 Simple image and video colorization using onnx converted deoldify model.
 
-Easy to install. Can be run on CPU (slow ~ 1it/sec.) or nVidia GPU (~ 10 it/sec. on RTX3060)
+Easy to install. Can be run on CPU or nVidia GPU
+
+ffmpeg for video colorzation required.
+
+Added floating point 16 model for 100% faster inference and simple GUI version.
 
 For inference run:
 
