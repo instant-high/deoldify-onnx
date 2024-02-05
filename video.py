@@ -21,6 +21,10 @@ opt = parser.parse_args()
 from color.deoldify import DEOLDIFY
 colorizer = DEOLDIFY(model_path="color/deoldify.onnx", device="cuda")
 
+# use faster floating point 16 model
+#from color.deoldify_fp16 import DEOLDIFY
+#colorizer = DEOLDIFY(model_path="color/deoldify_fp16.onnx", device="cuda")
+
 video = cv2.VideoCapture(opt.source)
 
 w = int(video.get(cv2.CAP_PROP_FRAME_WIDTH))
