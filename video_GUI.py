@@ -13,6 +13,10 @@ rt.set_default_logger_severity(3)
 from color.deoldify import DEOLDIFY
 colorizer = DEOLDIFY(model_path="color/deoldify.onnx", device="cuda")
 
+# use faster floating point 16 model
+#from color.deoldify_fp16 import DEOLDIFY
+#colorizer = DEOLDIFY(model_path="color/deoldify_fp16.onnx", device="cuda")
+
 class DEOLDIFY_GUI:
     def __init__(self, master):
         self.master = master
