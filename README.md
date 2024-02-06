@@ -25,3 +25,7 @@ https://github.com/instant-high/deoldify-onnx/assets/77229558/3824e96d-fffc-494e
 https://github.com/instant-high/deoldify-onnx/assets/77229558/543e1dd1-27da-4c63-95a9-9c0696adea51
 
 
+original deoldify:
+
+https://github.com/jantic/DeOldify
+
