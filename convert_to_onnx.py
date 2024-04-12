@@ -1,5 +1,6 @@
 ﻿'''
 run this script in the original deoldify repo
+thanks to henry ruhs - face fusion for helping
 '''
 
 import os
