@@ -1,0 +1,5 @@
+--render_factor 8
+
+Like the original deoldify but step 2
+So original render_factor 16 now is render_factor 8 (default)
+(Range 1 to 40 original = range 1 to 20 onnx version)
