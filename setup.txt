@@ -1,0 +1,16 @@
+clone repo
+
+conda create -n ENV_NAME python==3.10
+conda activate ENV_NAME
+cd c:\env\env_path
+
+pip install -r requirements.txt
+
+############# GPU ###############
+
+conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0
+pip uninstall onnxuntime
+pip install onnxruntime-gpu
+
+model download:
+https://drive.google.com/drive/folders/1bU9Zj7zGVEujIzvDTb1b9cyWU3s__WQR?usp=sharing
