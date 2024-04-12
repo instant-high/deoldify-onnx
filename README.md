@@ -1,5 +1,11 @@
 # deoldify-onnx
 
+Updated version: option render factor added (only commandline version)
+
+New models for use with render factor: 
+
+https://drive.google.com/drive/folders/1bU9Zj7zGVEujIzvDTb1b9cyWU3s__WQR?usp=sharing
+
 Simple image and video colorization using onnx converted deoldify model.
 
 Easy to install. Can be run on CPU or nVidia GPU
