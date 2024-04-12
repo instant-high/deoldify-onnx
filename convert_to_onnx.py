@@ -36,7 +36,7 @@ root_folder = Path('./deoldify')
 
 # select the original model to be converted:
 #raw_model = gen_inference_deep(root_folder=Path('./deoldify'), weights_name='./deoldify/ColorizeArtistic_gen').model
-#onnx_path = 'models/ColorizeArtistic_dyn.onnx'
+#onnx_path = 'ColorizeArtistic_dyn.onnx'
 
 #raw_model = gen_inference_wide(root_folder=Path('./deoldify'), weights_name='./deoldify/ColorizeStable_gen').model
 #onnx_path = 'ColorizeStable_dyn.onnx'
