@@ -1,3 +1,4 @@
+eg.
 --render_factor 8
 
 Like the original deoldify but step 2
