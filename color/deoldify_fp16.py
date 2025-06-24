@@ -17,8 +17,8 @@ class DEOLDIFY:
     def colorize(self, image, r_factor):
     
         # preprocess image:
-        targetL = cv2.cvtColor(image,cv2.COLOR_BGR2LAB)
-        targetL,_,_=cv2.split(image)
+        targetLAB = cv2.cvtColor(image,cv2.COLOR_BGR2LAB)
+        targetL,_,_=cv2.split(targetLAB)
 
         image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
         image = cv2.cvtColor(image, cv2.COLOR_GRAY2RGB)
@@ -34,12 +34,11 @@ class DEOLDIFY:
         
         # postprocess image:
         colorized = colorized.transpose(1,2,0).astype(np.float32)
-        colorized = cv2.cvtColor(colorized, cv2.COLOR_BGR2RGB).astype(np.uint8)
+        colorized = colorized.astype(np.uint8)
         colorized = cv2.resize(colorized,(w,h))
         colorized = cv2.GaussianBlur(colorized,(13,13),0)
-        colorizedLAB = cv2.cvtColor(colorized,cv2.COLOR_BGR2LAB)
+        colorizedLAB = cv2.cvtColor(colorized,cv2.COLOR_RGB2LAB)
         L,A,B=cv2.split(colorizedLAB)
-        colorizedLAB = cv2.resize(colorizedLAB,(w,h))
         colorized = cv2.merge((targetL,A,B))
         colorized = cv2.cvtColor(colorized,cv2.COLOR_LAB2BGR)
                       
